@@ -8,8 +8,8 @@ Developed and tested in chrome 51.0.2704.103 m.
 
 1. To install dependencies run "npm i"
 2. To run the project use on of the following commands:
-⋅⋅* "npm run dev" to run in development mode
-⋅⋅* "npm start" to build and run in production mode
+  * "npm run dev" to run in development mode
+  * "npm start" to build and run in production mode
 
 ## Main idea and how to use this thing
 
