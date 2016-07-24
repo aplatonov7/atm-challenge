@@ -1,1 +1,45 @@
 @import './variables.scss';
+
+@mixin material-shadow($depth) {
+  @if $depth == 1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  @if $depth == 2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  @if $depth == 3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  @if $depth == 4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  @if $depth == 5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+}
+
+@mixin btn($bg, $color) {
+  background: $bg;
+  color: $color;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 0.5rem 0.8rem;
+  @include material-shadow(1);
+  border: none;
+
+  cursor: pointer;
+
+  transition: box-shadow .1s ease-out, background .2s ease-in, color .2s ease-in;
+
+  &:disabled {
+    color: darken($color, 30%);
+    background-color: darken($bg, 10%);
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &:active {
+    background-color: darken($bg, 10%);
+  }
+}

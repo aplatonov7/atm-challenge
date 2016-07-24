@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.root {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: $c-accent-700;
+  min-height: 100%;
+  padding: 5rem;
+
+  @include material-shadow(1);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 0.55;
+}
+
+.side {
+  flex: 0.35;
+}
+
+.withdrawn {
+  color: $white;
+  text-align: center;
+}

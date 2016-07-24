@@ -1,0 +1,6 @@
+{
+  "name": "AtmCardReceiver",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AtmCardReceiver.js"
+}

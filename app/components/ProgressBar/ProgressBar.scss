@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+/* Styles borrowed from http://dev.gojko.net/web/2015/09/19/material-design-progress-pure-css.html */
+
+.root, .root:before {
+  height: 3px;
+  width: 100%;
+  margin: 0;
+}
+
+.root {
+  background-color: $c-accent-100;
+  display: flex;
+}
+
+.root:before {
+  background-color: $c-accent-500;
+  content: '';
+  animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes running-progress {
+  0% { margin-left: 0px; margin-right: 100%; }
+  50% { margin-left: 25%; margin-right: 0%; }
+  100% { margin-left: 100%; margin-right: 0; }
+}

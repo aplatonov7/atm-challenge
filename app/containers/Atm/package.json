@@ -1,0 +1,6 @@
+{
+  "name": "Atm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Atm.js"
+}

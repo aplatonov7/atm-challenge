@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.root {
+  width: 60%;
+  margin: 0 auto;
+  background: $c-primary-800;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include material-shadow(2);
+}
+
+.key {
+  @include btn($c-primary-500, $white);
+}
+
+.keyAlt {
+  @include btn($c-primary-700, $white);
+}
+
+.key,
+.keyAlt {
+  display: inline-block;
+  width: 33%;
+  flex-grow: 1;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  box-shadow: none;
+}

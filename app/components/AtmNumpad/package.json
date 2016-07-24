@@ -1,0 +1,6 @@
+{
+  "name": "AtmNumpad",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AtmNumpad.js"
+}
